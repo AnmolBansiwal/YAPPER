@@ -1,7 +1,8 @@
 import express from "express";
 import { ENV } from "./lib/env.js";
-import authRoutes from "./routes/auth.route.js"
-import messageRoute from "./routes/message.route.js"
+import authRoutes from "./routes/auth.route.js";
+import messageRoute from "./routes/message.route.js";
+import cookieParser from "cookie-parser";
 import path from "path";
 import { fileURLToPath } from "url";
 import {connectDB} from "./lib/db.js "
@@ -12,6 +13,7 @@ const __dirname = path.dirname(__filename);
 const PORT = ENV.PORT || 3000;
 app.use (express.json()); //req.body
 //routes
+app.use(cookieParser);
 app.use('/api/auth', authRoutes); 
 app.use('/api/messages',messageRoute); 
 
