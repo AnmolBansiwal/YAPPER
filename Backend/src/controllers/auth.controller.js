@@ -1,4 +1,4 @@
-import User from "../../models/User.js";
+import User from "../models/User.js";
 import bcrypt from "bcryptjs";
 import { generateToken } from "../lib/utils.js";
 import { ENV } from "../lib/env.js";
@@ -119,4 +119,9 @@ try{
         message:"internal server error"
     });
 }
+}
+
+//update profile controller
+export const updateProfile= async(req,res)=>{
+         
 }
