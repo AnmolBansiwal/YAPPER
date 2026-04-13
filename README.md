@@ -1,6 +1,8 @@
 <h1 align="center">✨ Full-Stack Chat App with Auth & Emails ✨</h1>
 
 ![Demo App](/Frontend/public/Chat_page.png)
+![Demo Page](Frontend/public/LandingPage.png)
+
 
 Highlights:
 
